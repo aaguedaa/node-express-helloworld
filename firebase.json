@@ -5,16 +5,6 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "function": "app"
-      }
-    ],
-    "site": "node-express-helloworld"  
-  },
-  "functions": {
-    "source": "."
+    ]
   }
 }

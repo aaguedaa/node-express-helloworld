@@ -2,18 +2,13 @@
   "name": "node-express-helloworld",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.html",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "firebase deploy"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
   "devDependencies": {
     "jest": "^27.0.0",
     "supertest": "^6.1.3"

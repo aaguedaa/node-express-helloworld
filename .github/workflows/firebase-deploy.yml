@@ -13,8 +13,8 @@ jobs:
         node-version: 22
     - run: npm ci
     - name: Deploy to Firebase
-      uses: w9jds/firebase-action@master
-      with:
-        args: deploy --only hosting,functions
-      env:
-        GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_NODE_EXPRESS_HELLOWORLD }}
+    run: |
+      echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NODE_EXPRESS_HELLOWORLD }}' > service-account.json
+      firebase deploy --only hosting,functions
+    env:
+      GOOGLE_APPLICATION_CREDENTIALS: service-account.json

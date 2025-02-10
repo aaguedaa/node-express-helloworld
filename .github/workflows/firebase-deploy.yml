@@ -17,4 +17,4 @@ jobs:
       with:
         args: deploy --only hosting,functions
       env:
-        GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_NODE_EXPRESS_HELLOWORLD }}
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_NODE_EXPRESS_HELLOWORLD }}
